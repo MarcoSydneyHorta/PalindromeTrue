@@ -1,0 +1,8 @@
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\bin\Debug\PalindromeTrue.exe.config
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\bin\Debug\PalindromeTrue.exe
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\bin\Debug\PalindromeTrue.pdb
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\obj\Debug\PalindromeTrue.csproj.AssemblyReference.cache
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\obj\Debug\PalindromeTrue.csproj.SuggestedBindingRedirects.cache
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\obj\Debug\PalindromeTrue.csproj.CoreCompileInputs.cache
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\obj\Debug\PalindromeTrue.exe
+D:\Marco\Cursos\C#\PalindromeTrue\PalindromeTrue\PalindromeTrue\obj\Debug\PalindromeTrue.pdb
