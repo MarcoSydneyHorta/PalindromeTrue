@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,41 +12,54 @@ namespace PalindromeTrue
         static void Main(string[] args)
         {
             Console.Write("Enter a palidrome or not: ");
-            int x = int.Parse(Console.ReadLine());
-            bool pal = false;
-            if (x <= -Math.Pow(2, 31) || x >= Math.Pow(2, 31))
+            try
             {
-                pal = false;
-            }
-            else
-            {
-                int siz = x.ToString().Length; //get how many digits in the number
-                string xs = x.ToString();
+                int x = int.Parse(Console.ReadLine());
 
-                if (siz > 1)
+                bool pal = false;
+                if (x <= -Math.Pow(2, 31) || x >= Math.Pow(2, 31))
                 {
-
-                    for (int i = 0; i < siz / 2; i++)
-                    {
-                        if (xs[i] == xs[siz - i - 1])
-                        {
-                            pal = true;
-                        }
-                        else
-                        {
-                            pal = false;
-                            break;
-                        }
-
-                    }
+                    pal = false;
                 }
                 else
                 {
-                    pal = true;
+                    int siz = x.ToString().Length; //get how many digits in the number
+                    string xs = x.ToString();
+                    if (xs[0] == '-')
+                    {
+                       xs = xs.Substring(1);
+                       siz--;
+                    }
+                    if (siz > 1)
+                    {
+                        for (int i = 0; i < siz / 2; i++)
+                        {
+
+                                if (xs[i] == xs[siz - i - 1])
+                                {
+                                    pal = true;
+                                }
+                                else
+                                {
+                                    pal = false;
+                                    break;
+                                }
+                            
+                        }
+                    }
+                    else
+                    {
+                        pal = true;
+                    }
                 }
+                Console.WriteLine("The number is a " + pal + " palindrome");
+                Console.ReadLine();
             }
-            Console.WriteLine("The number is a " + pal + " palindrome");
-            Console.ReadLine();
+            catch
+            {
+                Console.WriteLine("Number invalid");
+                Console.ReadLine();
+            }
         }
     }
 }
